@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drag and Drop Example</title>
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    .container {
+      display: flex;
+    }
+
+    #box1 {
+      width: 70%;
+      background-color: #610cbbc7;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #box2 {
+      flex-grow: 1;
+      background-color:#807bfa99;
+      padding: 20px;
+    
+   
+    }
+
+    /* Rest of the CSS styles */
+    .item {
+      padding: 10px;
+      margin-bottom: 10px;
+      flex-basis: calc(33.33% - 20px);
+      box-sizing: border-box;
+    }
+    .itemt {
+      padding: 10px;
+      margin-bottom: 10px;
+      flex-basis: calc(33.33% - 20px);
+      box-sizing: border-box;
+      padding: 10px;
+  margin-bottom: 10px;
+  flex-basis: calc(33.33% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #610cbbc7;
+  color: #fff;
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .highlight {
+      border-style: dashed;
+    }
+
+
+ 
+    .reset-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1e90ff;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .reset-btn:hover {
+      background-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="box1">
+      <div class="item" draggable="true">
+        <img src="6YTHG.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="54RFD.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./76543.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./css.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./FADAVZC.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./GHBFVDC.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./GJHGFDS.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./IKUYJHGF.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./JUHGFV.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./JYHG.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./KJHGB.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./KUYJHG.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./SDVC .jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./YKUJHGV.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./xcs.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./WhatsApp Image 2023-06-11 at 16.42.02.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./WhatsApp Image 2023-06-11 at 16.42.00.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./wdZ.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./vdvd.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./vdc.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src=".//UYTGRFD.jpg" alt="img">
+      </div>
+      <div class="item" draggable="true">
+        <img src="./svdz.jpg" alt="img">
+      </div>
+      <div class="itemt" draggable="true">HTML</div>
+      <div class="itemt" draggable="true">CSS</div>
+      <div class="itemt" draggable="true">JavaScript</div>
+      <div class="itemt" draggable="true">React</div>
+      <div class="itemt" draggable="true">Angular</div>
+      <div class="itemt" draggable="true">Vue.js</div>
+      <div class="itemt" draggable="true">jQuery</div>
+      <div class="itemt" draggable="true">Bootstrap</div>
+      <div class="itemt" draggable="true">Sass</div>
+      <div class="itemt" draggable="true">TypeScript</div>
+      <div class="itemt" draggable="true">Flutter</div>
+      <div class="itemt" draggable="true">React Native</div>
+      <div class="itemt" draggable="true">Kotlin</div>
+      <div class="itemt" draggable="true">Swift</div>
+      <div class="itemt" draggable="true">Java</div>
+      <div class="itemt" draggable="true">Xamarin</div>
+      <div class="itemt" draggable="true">Ionic</div>
+      <div class="itemt" draggable="true">PhoneGap</div>
+      <div class="itemt" draggable="true">NativeScript</div>
+      <div class="itemt" draggable="true">Appcelerator Titanium</div>
+      <div class="itemt" draggable="true">Node.js</div>
+      <div class="itemt" draggable="true">Python</div>
+      <div class="itemt" draggable="true">Ruby</div>
+      <div class="itemt" draggable="true">Java</div>
+      <div class="itemt" draggable="true">PHP</div>
+      <div class="itemt" draggable="true">ASP.NET</div>
+      <div class="itemt" draggable="true">Django</div>
+      <div class="itemt" draggable="true">Flask</div>
+      <div class="itemt" draggable="true">Ruby on Rails</div>
+      <div class="itemt" draggable="true">Laravel</div>
+
+      
+      <!-- Add more items here if needed -->
+    </div>
+    <div class="box" id="box2"></div>
+  </div>
+  <button class="reset-btn">Reset</button>
+
+  <script>
+    // Initialize variables
+    const draggableItems = document.querySelectorAll('.item, .itemt');
+    const dropzone = document.getElementById('box2');
+    const resetButton = document.querySelector('.reset-btn');
+    let draggedItem = null;
+  
+    // Add event listeners for drag and drop
+    draggableItems.forEach(item => {
+      item.addEventListener('dragstart', dragStart);
+      item.addEventListener('dragend', dragEnd);
+    });
+  
+    dropzone.addEventListener('dragenter', dragEnter);
+    dropzone.addEventListener('dragover', dragOver);
+    dropzone.addEventListener('dragleave', dragLeave);
+    dropzone.addEventListener('drop', drop);
+  
+    resetButton.addEventListener('click', reset);
+  
+    // Drag functions
+    function dragStart() {
+      draggedItem = this;
+      setTimeout(() => {
+        this.style.display = 'none';
+      }, 0);
+    }
+  
+    function dragEnd() {
+      draggedItem = null;
+      this.style.display = 'block';
+    }
+  
+    // Dropzone functions
+    function dragEnter(e) {
+      e.preventDefault();
+      this.classList.add('highlight');
+    }
+  
+    function dragOver(e) {
+      e.preventDefault();
+    }
+  
+    function dragLeave() {
+      this.classList.remove('highlight');
+    }
+  
+    function drop() {
+  this.classList.remove('highlight');
+  this.appendChild(draggedItem);
+  draggedItem.classList.add('success');
+  const img = draggedItem.querySelector('img');
+  if (img) {
+    img.style.width = '150px';
+    img.style.height = '150px';
+    img.style.borderRadius = '50px';
+  } else {
+    draggedItem.style.color = 'white';
+    draggedItem.style.backgroundColor = '#000000';
+    draggedItem.style.border = 'none';
+    draggedItem.style.fontWeight = 'bold';
+    draggedItem.style.borderRadius = '50px';
+  }
+}
+
+  
+    // Reset function
+    function reset() {
+  location.reload();
+}
+    
+  
+    // Set default size for specific images
+    const defaultSizeImages = [4, 5, 9, 13, 15, 16, 17, 18, 19, 20, 22];
+    draggableItems.forEach((item, index) => {
+      const img = item.querySelector('img');
+      if (img && defaultSizeImages.includes(index + 1)) {
+        img.style.height = 'auto';
+        img.style.width = 'auto';
+      } else if (img) {
+        img.style.height = '300px';
+        img.style.width = '300px';
+      }
+    });
+  </script>
+</body>
+</html>
